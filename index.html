@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vasudev AI</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<!-- HEADER -->
+<header>
+    <div class="left">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div class="logo">🦚 Vasudev AI</div>
+    </div>
+
+    <button class="theme-btn"><i class="fas fa-moon"></i></button>
+</header>
+
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+    <h3>Chats</h3>
+
+    <div class="coming-soon">
+        🚀 Features Coming Soon...
+        <p>Chat history & smart memory updates are on the way.</p>
+    </div>
+
+    <div id="chatList"></div>
+</div>
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+<!-- CHAT -->
+<div class="chat-wrapper">
+
+    <div id="chat-box">
+        <div class="bot-message">
+            <div class="bubble">🙏 Welcome. I am Vasudev AI.</div>
+        </div>
+    </div>
+
+    <div class="typing" id="typing">Vasudev AI is thinking...</div>
+
+</div>
+
+<!-- INPUT -->
+<div class="input-area">
+
+    <input type="text" id="user-input" placeholder="Ask anything..." />
+
+    <button id="mic-btn">🎤</button>
+
+    <button id="send-btn">
+        <i class="fas fa-paper-plane"></i>
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
